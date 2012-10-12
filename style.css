@@ -1,0 +1,208 @@
+/*body > * {
+	border : 1px dotted black;
+}
+
+body > * > * {
+	border : 1px dashed red;	
+}
+
+body > * > * *{
+	border : 1px solid yellow;	
+}
+
+
+body {
+	background-image : url('images/bg.png');
+	background-repeat: no-repeat;
+}*/
+
+/* Header
+*******************************/
+header {
+	min-height : 190px;
+	width  : 970px;
+	margin : 0 auto; 
+}
+
+header div.top {
+	width  : 970px;
+	height : 140px;
+}
+
+header nav {
+	width  : 970px;
+	height : 50px;
+}
+
+/* Slider
+*******************************/
+
+div.banner-container {
+	background-image  : url('images/slider-bg.jpg');
+	background-repeat : no-repeat;
+	padding-top 	  : 50px;
+}
+
+div.banner-container div.back {
+	min-height : 600px;
+	width      : 970px;
+	margin     : 0 auto;
+	background-color : #fefefe;
+	border		: 1px  solid #aaa;
+	position    : relative;
+	overflow	: hidden;
+}
+
+div.banner {
+	min-height  : 500px;
+	width  		: 870px;
+	margin      : 50px auto;
+	position    : relative;
+	overflow	: hidden;
+}
+
+div.banner div.train {
+	width  	   : 4000px;
+	min-height : 500px;
+	position : absolute;
+	left     : 0;
+	top      : 0;
+	-webkit-transition : left 800ms ease-in-out;
+	-moz-transition    : left 800ms ease-in-out;
+	-o-transition      : left 800ms ease-in-out;
+	-ms-transition     : left 800ms ease-in-out;
+}
+
+div.banner div.train > div {
+	min-height  : 500px;
+	float       : left;
+	width       : 870px;
+	background-size   : cover;
+	background-position : center center;
+	background-repeat : no-repeat;
+}
+
+div.back div.shadow {
+	background-repeat: no-repeat;
+	position : absolute;
+}
+
+div.back div.shadow,div.top {
+
+} 
+
+div.back div.shadow,div.left {
+	
+}
+
+div.back div.shadow,div.right {
+	
+}
+
+div.back div.shadow,div.bottom {
+	background-image : url('images/slider_shadow_bottom.png');
+	left    : 0;
+	top 	: 100%;
+	width 	: 970px;
+	height  : 19px;
+}
+
+div.back div.ribbon {
+	background-image  : url('images/slider-ribbon.png');
+	top   : -5px;
+	right : -5px;
+	width : 140px;
+	height: 142px;
+}
+
+div.back ul.btns{
+	height     : 20px;
+	list-style : none;
+	position   : absolute;
+	left       : 427px;
+	bottom 	   : 15px;
+}
+
+div.back ul.btns li{
+	float  : left;
+	width  : 20px;
+	height : 20px;
+	cursor : pointer;
+	box-shadow : inset 0 0 0 2px #D4AF37;
+	margin-right       : 5px;
+	border-radius      : 10px;
+	-webkit-transition : all 1100ms;
+	-moz-transition    : all 1100ms;
+	-o-transition      : all 1100ms;
+	-ms-transition     : all 1100ms;
+}
+
+div.back ul.btns li:hover, 
+div.back ul.btns li.active{
+	background-color : #333;
+	-webkit-transition-duration : 200ms;
+	-moz-transition-duration    : 200ms;
+	-o-transition-duration      : 200ms;
+	-ms-transition-duration     : 200ms;
+}
+
+div.banner div.previous,
+div.banner div.next{
+	position : absolute;
+	top      : 235px;
+	width    : 30px;
+	height   : 30px;
+	opacity  : 0;
+	cursor   : pointer;
+	background-image   : url('images/arrow.png');
+	background-repeat  : no-repeat;
+	-webkit-transition : opacity 500ms;
+	-moz-transition    : opacity 500ms;
+	-o-transition      : opacity 500ms;
+	-ms-transition     : opacity 500ms;
+}
+
+div.banner:hover div.previous,
+div.banner:hover div.next{
+	opacity : 1;
+}
+
+div.banner div.previous{
+	background-position : 0px 0px;
+	left : 10px;
+}
+div.banner div.next{
+	right : 10px;
+	background-position : -30px 0px;
+}
+
+
+/* Articles
+*******************************/
+div.content {
+	width      : 970px;
+	min-height : 390px;
+	padding-top: 50px;
+	margin     : 0 auto;
+}
+
+div.content article {
+	width  : 300px;
+	height : 340px;
+}
+
+div.content article.second {
+	margin-right : 30px;
+}
+
+div.content article.guest {
+	margin-right : auto;
+}
+
+/* Footer
+*******************************/
+footer {
+	width      : 970px;
+	min-height : 60px;
+	margin     : 0 auto;
+}
