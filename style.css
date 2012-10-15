@@ -18,28 +18,115 @@ body {
 
 /* Header
 *******************************/
-header {
-	min-height : 190px;
+header.top {
+	min-height : 140px;
 	width  : 970px;
 	margin : 0 auto; 
 }
 
-header div.top {
+header.top div.top {
 	width  : 970px;
 	height : 140px;
+	padding-top : 28px;
 }
 
-header nav {
+header.top div.top h1.logo{
+	width  : 0;
+	height : 84px;
+	padding-right : 200px;  /*or ==> text-indent: 100%;*/
+	overflow : hidden;
+	background-image : url('images/logo.png');
+	background-repeat: no-repeat;
+}
+
+header.top div.top div.contact {
+	width  : 670px;
+	height : 70px;
+	padding-top : 20px;
+	/*background-color : rgba(255,0,0,0.5);*/
+}
+
+header.top div.top div.contact address.address{
+	width  : 400px;
+	height : 50px;
+	/*border : 1px solid red;*/
+}
+
+header.top div.top div.contact div.social{
+	width  : 200px;
+	height : 50px;
+	/*border : 1px solid red;*/
+}
+
+header.bottom{
+	border-top 	  : 1px solid #eee;
+	border-bottom : 1px solid #eee;
+}
+
+header.bottom div.menu-container {
 	width  : 970px;
+	margin : 0 auto;
+}
+
+header.bottom nav {
+	float  : right; 
+	width  : 400px;
 	height : 50px;
 }
 
+nav menu {
+	list-style-type : none;
+}
+
+nav menu li {
+	float  : right;
+	border-right : 1px solid #eee;
+	position : relative;
+}
+
+nav menu li div.top-shadow {
+	position : absolute;
+	z-index  : 2;
+	bottom   : 100%;
+	right    : 0;
+	width    : 100%;
+	height   : 3px;
+	background-color : #72AC4B;
+	display : none;
+}
+
+nav menu li:first-child div.top-shadow {
+	display : block;
+}
+
+nav menu li:hover div.top-shadow {
+	display : block;
+}
+
+nav menu li a {
+	color   : #555;
+	display : block;
+	text-decoration : none;
+	font-size       : 18px;
+	font-family     : Arial, Helvetica;
+	font-weight     : bold;
+	padding 		: 16px 15px; 
+}
+
+nav menu li a:hover {
+	color : #72AC4B;
+}
+
+header.bottom form {
+	margin-top : 13px;
+	width : 300px;
+} 
 /* Slider
 *******************************/
 
 div.banner-container {
 	background-image  : url('images/slider-bg.jpg');
-	background-repeat : no-repeat;
+	background-repeat : repeat-x;
 	padding-top 	  : 50px;
 }
 
@@ -50,7 +137,6 @@ div.banner-container div.back {
 	background-color : #fefefe;
 	border		: 1px  solid #aaa;
 	position    : relative;
-	overflow	: hidden;
 }
 
 div.banner {
@@ -109,7 +195,7 @@ div.back div.shadow,div.bottom {
 
 div.back div.ribbon {
 	background-image  : url('images/slider-ribbon.png');
-	top   : -5px;
+	top   : -3px;
 	right : -5px;
 	width : 140px;
 	height: 142px;
