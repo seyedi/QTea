@@ -173,6 +173,8 @@ div.banner-container {
 	background-color : #F4F4F4;
 	background-repeat : repeat-x;
 	padding-top 	  : 50px;
+	min-height		  : 700px;
+	border-bottom	  : 1px solid #999;
 }
 
 div.banner-container div.back {
@@ -320,6 +322,7 @@ div.content {
 div.content article {
 	width  : 300px;
 	height : 340px;
+	background-color : #eee;
 }
 
 div.content article.second {
@@ -334,10 +337,52 @@ div.content article.guest {
 *******************************/
 footer {
 	background-color : #F4F4F4;
+	border-top	     : 1px solid #999;
 }
 
 footer div.footer{
 	width      : 970px;
-	min-height : 60px;
+	padding-top: 20px;
+	min-height : 40px;
 	margin     : 0 auto;
+}
+
+footer div.copyright {
+	width     : 400px;
+	height    : 20px;
+}
+
+footer div.copyright p { 
+	direction : ltr;
+}
+
+footer div.menu {
+	width : 400px;
+	height: 20px;
+}
+
+
+footer menu li {
+	float  : right;
+	margin-right: 20px;
+}
+
+footer menu li:first-child {
+	margin-right: 0;
+}
+
+footer menu li a {
+	color   : #333;
+	text-decoration : none;
+	font-size       : 15px;
+	/*font-weight     : bold;*/
+	font-family     : Arial, Helvetica;
+}
+
+footer menu li:first-child a {
+	color : #72AC4B;
+}
+
+footer menu li a:hover {
+	color : #72AC4B;
 }
