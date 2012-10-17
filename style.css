@@ -1,7 +1,7 @@
 /* Header
 *******************************/
 header.top {
-	min-height : 100px;
+	min-height : 130px;
 	width  : 970px;
 	margin : 0 auto; 
 }
@@ -18,7 +18,7 @@ header.top div.top h1.logo{
 	height : 84px;
 	padding-right : 200px;  /*or ==> text-indent: 100%;*/
 	overflow : hidden;
-	background-image : url('images/logo.png');
+	background-image : url('images/logo.jpg');
 	background-repeat: no-repeat;
 }
 
@@ -220,19 +220,23 @@ div.back div.shadow {
 	position : absolute;
 }
 
-div.back div.shadow,div.top {
-
-} 
-
-div.back div.shadow,div.left {
-	
+div.back div.left {
+	background-image : url('images/sh_l.png');
+	right   : 100%;
+	top 	: 0;
+	width 	: 19px;
+	height  : 600px;	
 }
 
-div.back div.shadow,div.right {
-	
+div.back div.right {
+	background-image : url('images/sh_r.png');
+	left    : 100%;
+	top 	: 0;
+	width 	: 19px;
+	height  : 600px;	
 }
 
-div.shadow,div.bottom {
+div.back div.bottom {
 	background-image : url('images/slider_shadow_bottom.png');
 	left    : 0;
 	top 	: 100%;
@@ -246,6 +250,7 @@ div.back div.ribbon {
 	right : -5px;
 	width : 140px;
 	height: 142px;
+	z-index : 3;
 }
 
 div.back ul.btns{
