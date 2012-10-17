@@ -334,6 +334,7 @@ div.content article h2 {
 
 div.content article > img {
 	margin : 20px 0;
+	box-shadow: 0 0 8px #72AC4B;
 }
 
 div.content article p {
@@ -347,7 +348,7 @@ div.content article a {
 }
 
 div.content article.second {
-	margin-right : 30px;
+	margin-right : 36px;
 }
 
 div.content article.guest {
