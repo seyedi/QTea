@@ -5,11 +5,11 @@
  * fork me on github.
  */
 span{color:inherit}
-@media all{html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+@media all{html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;/*font-size:100%;font:inherit;*/vertical-align:baseline}
 option{padding-left:.4em}
 select{padding:1px}
 * html body *{overflow:visible}
-body{font-size:100.01%;background:#fff;color:#000;text-align:left;line-height:1}
+body{/*font-size:100.01%;*/background:#fff;color:#000;text-align:left;line-height:1}
 div{outline:0 none}
 ol,ul,menu{list-style:none}
 blockquote,q{quotes:none}
@@ -21,7 +21,7 @@ audio:not([controls]){display:none;height:0}
 [hidden]{display:none}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
-h1{font-size:2em}
+/*h1{font-size:2em}*/
 abbr[title]{border-bottom:1px dotted}
 b,strong{font-weight:bold}
 dfn{font-style:italic}

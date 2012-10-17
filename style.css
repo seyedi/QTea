@@ -312,6 +312,9 @@ div.banner div.next{
 
 /* Articles
 *******************************/
+div.content-container {
+	background-color : #FFF;
+}
 div.content {
 	width      : 970px;
 	min-height : 390px;
@@ -322,7 +325,25 @@ div.content {
 div.content article {
 	width  : 300px;
 	height : 340px;
-	background-color : #eee;
+	text-align : right;
+}
+
+div.content article h2 {
+	color : #333;
+}
+
+div.content article > img {
+	margin : 20px 0;
+}
+
+div.content article p {
+	color 		: #444;
+	line-height : 22px;
+	font-size   : 13px;
+}
+
+div.content article a {
+	float : left;
 }
 
 div.content article.second {
@@ -348,7 +369,7 @@ footer div.footer{
 }
 
 footer div.copyright {
-	width     : 400px;
+	width     : 500px;
 	height    : 20px;
 }
 
