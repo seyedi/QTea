@@ -1,36 +1,19 @@
-/*body > * {
-	border : 1px dotted black;
-}
-
-body > * > * {
-	border : 1px dashed red;	
-}
-
-body > * > * *{
-	border : 1px solid yellow;	
-}
-
-
-body {
-	background-image : url('images/bg.png');
-	background-repeat: no-repeat;
-}*/
-
 /* Header
 *******************************/
 header.top {
-	min-height : 140px;
+	min-height : 100px;
 	width  : 970px;
 	margin : 0 auto; 
 }
 
 header.top div.top {
 	width  : 970px;
-	height : 140px;
+	height : 100px;
 	padding-top : 28px;
 }
 
 header.top div.top h1.logo{
+	color  : transparent;
 	width  : 0;
 	height : 84px;
 	padding-right : 200px;  /*or ==> text-indent: 100%;*/
@@ -40,27 +23,79 @@ header.top div.top h1.logo{
 }
 
 header.top div.top div.contact {
-	width  : 670px;
+	width  : 450px;
 	height : 70px;
 	padding-top : 20px;
-	/*background-color : rgba(255,0,0,0.5);*/
 }
 
-header.top div.top div.contact address.address{
-	width  : 400px;
+header.top address.address{
+	width  : 210px;
 	height : 50px;
-	/*border : 1px solid red;*/
 }
 
-header.top div.top div.contact div.social{
-	width  : 200px;
-	height : 50px;
-	/*border : 1px solid red;*/
+header.top address.address li {
+	margin-bottom	: 10px;
+	font-size       : 14px;
+	text-align 		: center;
+	font-family     : Arial, Helvetica;
+}
+
+header.top address.address li.sec {
+	color : #555;
+}
+
+header.top address.address li span {
+	direction : ltr;
+	margin-right : 5px;
+}
+
+header.top div.social{
+	height : 30px;
+	border : 1px solid #eee;
+	border-radius : 5px;
+}
+
+header.top div.social li {
+	float : left;
+	width : 40px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position : center top;
+	border-left : 1px solid #eee;
+}
+
+header.top div.social li:first-child {
+	border-left : none;
+}
+
+header.top div.social li:hover {
+	background-color    : #72AC4B;
+	background-position : center bottom;
+}
+
+header.top div.social li a {
+	width   : 20px;
+	height  : 20px;
+	padding : 5px 10px;
+	display : block;
 }
 
 header.bottom{
 	border-top 	  : 1px solid #eee;
 	border-bottom : 1px solid #eee;
+	position      : relative;
+}
+
+div.nav-shadow {
+	position: absolute;
+	left    : 0px;
+	top 	: 100%;
+	width 	: 100%;
+	height  : 19px;
+	background-image    : url('images/slider_shadow_bottom.png');
+	background-repeat   : no-repeat;
+	background-position : center top;
+
 }
 
 header.bottom div.menu-container {
@@ -70,7 +105,7 @@ header.bottom div.menu-container {
 
 header.bottom nav {
 	float  : right; 
-	width  : 400px;
+	width  : 600px;
 	height : 50px;
 }
 
@@ -109,7 +144,6 @@ nav menu li a {
 	text-decoration : none;
 	font-size       : 18px;
 	font-family     : Arial, Helvetica;
-	font-weight     : bold;
 	padding 		: 16px 15px; 
 }
 
@@ -121,11 +155,22 @@ header.bottom form {
 	margin-top : 13px;
 	width : 300px;
 } 
+
+header.bottom form input {
+	width : 200px;
+	border-radius : 10px;
+	height : 20px;
+	background-image : url('images/search.png');
+	background-repeat: no-repeat;
+	background-position : right 2px;
+	padding  : 0 20px;
+}
 /* Slider
 *******************************/
 
 div.banner-container {
 	background-image  : url('images/slider-bg.jpg');
+	background-color : #F4F4F4;
 	background-repeat : repeat-x;
 	padding-top 	  : 50px;
 }
@@ -185,7 +230,7 @@ div.back div.shadow,div.right {
 	
 }
 
-div.back div.shadow,div.bottom {
+div.shadow,div.bottom {
 	background-image : url('images/slider_shadow_bottom.png');
 	left    : 0;
 	top 	: 100%;
@@ -288,6 +333,10 @@ div.content article.guest {
 /* Footer
 *******************************/
 footer {
+	background-color : #F4F4F4;
+}
+
+footer div.footer{
 	width      : 970px;
 	min-height : 60px;
 	margin     : 0 auto;
