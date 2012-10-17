@@ -66,6 +66,11 @@ header.top div.social li {
 
 header.top div.social li:first-child {
 	border-left : none;
+	border-radius : 5px 0 0 5px;
+}
+
+div.social li.last-child {
+	border-radius : 0 5px 5px 0;	
 }
 
 header.top div.social li:hover {
