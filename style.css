@@ -23,7 +23,7 @@ header.top div.top h1.logo{
 }
 
 header.top div.top div.contact {
-	width  : 700px;
+	width  : 450px;
 	height : 70px;
 	padding-top : 20px;
 }
@@ -34,19 +34,16 @@ header.top address.address{
 }
 
 header.top address.address li {
-	margin-bottom	: 10px;
-	font-size       : 14px;
-	text-align 		: center;
-	font-family     : Arial, Helvetica;
+	margin-bottom	: 5px;
+	font-size       : 13px;
+	text-align 		: left;
+	font-family     : arial;
+	direction		: ltr;
+	font-style 	    : normal !important;
 }
 
 header.top address.address li.sec {
-	color : #555;
-}
-
-header.top address.address li span {
-	direction : ltr;
-	margin-right : 5px;
+	color : #888;
 }
 
 header.top div.social{
@@ -345,6 +342,8 @@ div.content article {
 
 div.content article h2 {
 	color : #333;
+	/*text-shadow:0px 0px 0 rgb(-204,-204,-204), 0px 1px 0 rgb(-459,-459,-459);*/
+
 }
 
 div.content article > img {
@@ -391,6 +390,7 @@ footer div.copyright {
 
 footer div.copyright p { 
 	direction : ltr;
+	font-weight     : bold;
 }
 
 footer div.menu {
@@ -412,7 +412,7 @@ footer menu li a {
 	color   : #333;
 	text-decoration : none;
 	font-size       : 15px;
-	/*font-weight     : bold;*/
+	font-weight     : bold;
 	font-family     : Arial, Helvetica;
 }
 
