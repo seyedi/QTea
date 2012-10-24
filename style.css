@@ -358,8 +358,17 @@ div.content article p {
 	font-size   : 13px;
 }
 
-div.content article a {
+div.content article > a {
 	float : left;
+	display : block;
+	width : 32px;
+	height: 32px;
+	background-position : 0 0;
+	background-image: url('images/more.png');
+}
+
+div.content article > a:hover {
+	background-position : 0 -32px;
 }
 
 div.content article.second {
@@ -425,14 +434,15 @@ footer menu li a:hover {
 	color : #72AC4B;
 }
 
-
-
-/* about us page
+/* another page
 ****************************************/
-div.aboutus-container{
+
+div.containers{
 	background-image : url('images/bg.jpg');
 }
 
+/* about us page
+****************************************/
 div.content-aboutus{
 	width      : 970px;
 	min-height : 390px;
@@ -442,11 +452,6 @@ div.content-aboutus{
 
 /* order page
 ****************************************/
-
-div.order-container{
-	background-image : url('images/bg.jpg');
-}
-
 div.content-order{
 	width      : 970px;
 	min-height : 390px;
@@ -456,13 +461,72 @@ div.content-order{
 
 /* comments page
 ****************************************/
-div.comments-container{
-	background-image : url('images/bg.jpg');
-}
-
 div.content-comments{
 	width      : 970px;
 	min-height : 390px;
 	padding-top: 50px;
 	margin     : 0 auto;
 }
+
+/* hadis page
+****************************************/
+div.content-hadis {
+	width   : 950px;
+	margin  : 0 auto;
+	text-align : right;
+	padding : 50px 10px;
+}
+
+div.content-hadis h2 {
+	background-image    : url('images/header.png');
+	background-repeat   : no-repeat;
+	background-position : center 0;
+	margin-bottom       : 50px;
+	height              : 30px;
+	text-align          : center;
+	padding-top         : 5px;
+}
+
+div.content-hadis > div{
+	font-size : 20px;
+	margin-bottom : 50px;
+}
+
+div.content-hadis > div p {
+	text-indent : 100px;
+	line-height : 30px;
+}
+
+div.content-hadis > hr {
+	/*height : 1px;*/
+}
+
+div.content-hadis hr.top {
+	width : 500px;
+}
+
+div.content-hadis hr.bottom {
+	width : 300px;
+	margin-top : -5px;
+	margin-bottom : 40px;
+}
+
+span.source {
+	color : #555;
+	float : left;
+	font-size : 15px;
+}
+
+span.from {
+	color : #72AC4B;
+}
+
+
+
+
+/*  page
+****************************************/
+/*  page
+****************************************/
+
+
