@@ -19,7 +19,6 @@ The website for the **QTea** company
 * [CSS3](https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference)
 * [1Styles](https://github.com/AliMD/1styles)
 * [JavaScript](http://en.wikipedia.org/wiki/Javascript)
-* [jQuery.js](https://github.com/jquery/jquery)
 * [html5shiv](https://github.com/aFarkas/html5shiv)
 
 
