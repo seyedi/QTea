@@ -268,23 +268,22 @@ div.back ul.btns li{
 	width  : 20px;
 	height : 20px;
 	cursor : pointer;
-	background-image  : url('images/btn.png');
+	background-image  : url('images/btn1.png');
 	background-repeat : no-repeat;
 	background-position : left top;
 	/*box-shadow : inset 0 0 0 2px #D4AF37;*/
 	/*box-shadow :  0 0 0 1px #72AC4B;*/
 	/*box-shadow :  0 0 0 1px #000 ,  0 0 0 1px #555 , 0 0 0 1px #999 , 0 0 0 1px #eee , 0 0 0 1px #fff;*/
 	margin-right       : 5px;
-	border-radius      : 10px;
-	-webkit-transition : all 1100ms;
-	-moz-transition    : all 1100ms;
-	-o-transition      : all 1100ms;
-	-ms-transition     : all 1100ms;
+	-webkit-transition : all 0.8s;
+	-moz-transition    : all 0.8s;
+	-o-transition      : all 0.8s;
+	-ms-transition     : all 0.8s;
 }
 
 div.back ul.btns li:hover, 
 div.back ul.btns li.active{
-	background-position : left bottom;
+	background-position : 0 -20px;
 	/*-webkit-transition-duration : 200ms;
 	-moz-transition-duration    : 200ms;
 	-o-transition-duration      : 200ms;
@@ -359,6 +358,7 @@ div.content article a.pic img {
 }
 
 div.content article p {
+	text-align  : justify;
 	color 		: #444;
 	line-height : 22px;
 	font-size   : 13px;
@@ -470,12 +470,16 @@ div.containers h2 {
 
 /* about us page
 ****************************************/
-/*div.content-aboutus{
-	width      : 970px;
-	min-height : 390px;
-	padding-top: 50px;
-	margin     : 0 auto;
-}*/
+div.content-aboutus{
+	min-height : 500px;
+	padding-top: 200px;
+}
+
+div.content-aboutus p {
+	color       : #333;
+	font-size   : 22px;
+	line-height : 35px;
+}
 
 /* order page
 ****************************************/
@@ -488,12 +492,51 @@ div.containers h2 {
 
 /* comments page
 ****************************************/
-/*div.content-comments{
-	width      : 970px;
-	min-height : 390px;
-	padding-top: 50px;
-	margin     : 0 auto;
-}*/
+div.content-comments{
+	
+}
+
+
+div.content-comments .contactright {
+	min-height: 500px;
+}
+
+.contactright form fieldset {
+	padding : 50px;
+}
+
+.contactright legend {
+	color  : #777;
+	font-weight : bold;
+	font-size   : 22px;
+}
+
+div.content-comments .contactright p {
+	color: #333;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+div.content-comments .contactright input.name,textarea {
+	margin-bottom: 20px;
+	margin-top: 3px;
+	color: #333;
+	border: 1px solid #2B2B2B;
+	width: 200px;
+	height: 22px;
+}
+
+div.content-comments .contactright textarea {
+	margin-bottom: 20px;
+	margin-top: 3px;
+	width: 350px;
+	height: 170px;
+}
+
+div.content-comments .contactright input.button {
+	width: 100px;
+	height: 30px;
+}
 
 /* hadis page
 ****************************************/
@@ -516,8 +559,8 @@ div.content-hadis hr.top {
 }
 
 div.content-hadis hr.bottom {
-	width : 300px;
-	margin-top : -5px;
+	width         : 300px;
+	margin-top    : -5px;
 	margin-bottom : 40px;
 }
 
